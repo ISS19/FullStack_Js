@@ -1,0 +1,66 @@
+.navbar {
+    background-image: url("/assets/img/navbar.png");
+    background-position: 25%;
+    height: 94vh;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 10%;
+    box-shadow: 0 4px 10px #4c4d4b;
+}
+.navBouton{
+    margin-left: -2%;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.navimg{
+    width: 40px;
+    height: 40px;
+}
+.textOverlay{
+    margin-left: 10%;
+    transition: 0.5s;
+}
+.navBouton:hover{
+    margin-right: -8px;
+    background-color: #DC9551;
+}
+.Link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.dropdown {
+    position: absolute;
+    display: block;
+    top: 2%;
+    left: 12%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1;
+}
+.dropdown input{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #60615f;
+    border-right: 1px solid #40413f;    
+    border-bottom: 1px solid #40413f;
+    font-size: 14px;
+}
+.dropdown button{
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid #60615f;
+    border-right: 1px solid #40413f;    
+    border-bottom: 1px solid #40413f;
+    border-radius: 10px;
+}

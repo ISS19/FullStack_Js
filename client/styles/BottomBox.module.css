@@ -1,0 +1,57 @@
+.bottombox{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 1315px;
+    height: 54.5vh;
+    box-shadow: 0 4px 10px #4c4d4b;
+    overflow-y: auto;
+}
+.bottombox::-webkit-scrollbar {
+    width: 5px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+.bottombox::-webkit-scrollbar-thumb {
+    background-color: #c7c7c7;
+    border-radius: 5px;
+}
+
+/**************Ouvrier***************/
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.table thead {
+    background: #DC9551;
+    color: white;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.table tbody tr:hover td {
+    color: #333;
+}
+.searchContaint{
+    display: flex;
+    align-items: center;
+}
+.search{
+    width: 20px;
+    height: 20px;
+}

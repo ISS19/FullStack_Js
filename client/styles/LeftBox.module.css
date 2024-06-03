@@ -1,0 +1,99 @@
+.LeftBox{
+    margin: 10px;
+	border-radius: 10px;
+	width: 70%;
+	height: 82vh;
+	box-shadow: 0 4px 10px #4c4d4b;
+}
+
+/*****************Statistique*****************/
+.contentApropos{
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.contentApropos .card{
+    height: 100px;
+    background: #4F5726;
+    display: flex;
+	position: relative;
+    width: 48%;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 7px #4c4d4b;
+}
+.contentApropos .card .imgBox{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+.contentApropos .card:hover .imgBox{
+    height: 100px;
+    width: 100px;
+    left: 55px;
+    top: 90px;
+}
+.contentApropos .card .imgBox img{
+    max-width: 70px;
+    transition: 0.5s ease-in-out;
+}
+.contentApropos .card:hover .imgBox img{
+    max-width: 75px;
+}
+.contentApropos .card .content{
+    position: absolute;
+    right: 0;
+    width: 73%;
+    height: 100%;
+    padding: 20px;
+    justify-content: left;
+    align-items: left;
+	font-size: 25px;
+}
+
+/******************Secteur**********************/
+.contentSecteur {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.table thead {
+    background: #7E7B20;
+    color: white;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.table tbody tr:hover td {
+    color: #333;
+}

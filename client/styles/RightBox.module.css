@@ -1,0 +1,45 @@
+.RightBox{
+    margin: 10px;
+	border-radius: 10px;
+	width: 30%;
+	box-shadow: 0 4px 10px #4c4d4b;
+}
+
+/*************Secteur********************/
+.contentSecteurDroite{
+	position: absolute;
+	margin: 1%;
+}	 
+.contentSecteurDroite td{
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.contentSecteurDroite button{
+    position: relative;
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid #60615f;
+    border-right: 1px solid #40413f;    
+    border-bottom: 1px solid #40413f;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+.contentSecteurDroite input{
+	width: 200px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #60615f;
+    border-right: 1px solid #40413f;    
+    border-bottom: 1px solid #40413f;
+    font-size: 14px;
+}
+.contentSecteurDroite input::placeholder{
+    font-size: 14px;
+}
+.contentSecteurDroite .inTypeFile{
+	width: 200px;
+    border: 1px solid #60615f;
+    font-size: 12px;
+}

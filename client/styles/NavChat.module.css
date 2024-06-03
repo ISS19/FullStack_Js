@@ -1,0 +1,44 @@
+.navchat {
+    display: block;
+    height: 95vh;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 20%;
+    box-shadow: 0 4px 10px #4c4d4b;
+}
+.HeaderBar{
+    display: flex;
+}
+.HeaderBar h2{
+    margin: 10px;
+}
+
+.chatliste{
+   height: 86vh;
+   overflow-y: auto;
+}
+.chatliste::-webkit-scrollbar {
+    width: 5px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+.chatliste::-webkit-scrollbar-thumb {
+    background-color: #c7c7c7;
+    border-radius: 5px;
+}
+.chatliste li{
+    width: 87%;
+    padding: 5%;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #dedbc7;
+}
+.chatliste li:nth-child(even){
+    background-color: #c7ced6;
+}
+.chatliste li:hover{
+    background-color: rgb(235, 235, 235);
+}

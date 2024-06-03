@@ -1,0 +1,17 @@
+.chatbox{
+    display: block;
+    margin: 10px;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 1200px;
+    box-shadow: 0 4px 10px #4c4d4b;
+}
+
+.HeaderBox{
+    display: flex;
+    justify-content: center;
+}
+.HeaderBox h2{
+    margin: 10px;
+}

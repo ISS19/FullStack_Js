@@ -1,0 +1,128 @@
+@keyframes animationText{
+    0%{
+        color: #4F5726;
+    }
+    100%{
+        color: #fff;
+    }
+}
+.login {
+    background-image: url(../public/assets/img/champ.jpg);
+    background-size: cover;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 86.4vh;
+}
+.formLogin {
+    text-align: center;
+}
+.formBorder{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 10px 50px #4c4d4b;
+    border: 1px solid #60615f;
+    border-right: 1px solid #40413f;    
+    border-bottom: 1px solid #40413f;
+}
+.formBorder h2{
+    animation-name: animationText;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.formBorder input{
+    width: 200px;
+    background: transparent;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #60615f;
+    border-right: 1px solid #40413f;    
+    border-bottom: 1px solid #40413f;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: 1px 1px 1px 1px #60615f;
+}
+.formBorder input::placeholder{
+    color: #fff;
+    font-size: 12px;
+}
+.formBorder button{
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 900;
+    z-index: 0;
+    border: 1px solid #60615f;
+    border-right: 1px solid #40413f;    
+    border-bottom: 1px solid #40413f;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+.formBorder button:hover:before{
+    top: 0;
+    border-radius: 0;
+}
+.formBorder button:before{
+    content:"";
+    position: absolute;
+    top:60px;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #4F5726;
+    border-radius: 50% 50% 0 0;
+    z-index: -1;
+    transition: all .5s;
+}
+.formBorder button:hover{
+    transition: .7s;
+    color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+    .formBorder {
+        width: 80%; /* Ajustez la largeur du formulaire */
+    }
+}
+
+/* Téléphones et petites tablettes */
+@media only screen and (max-width: 768px) {
+    .formBorder {
+        width: 90%; /* Ajustez la largeur du formulaire */
+    }
+    .formLogin {
+        transform: translateY(0); /* Annulez la transformation Y */
+    }
+    .formBorder button {
+        width: 100%; /* Ajustez la largeur du bouton */
+        margin: 10px 0; /* Ajoutez un espacement entre les boutons */
+    }
+}
+
+/* Téléphones en mode portrait */
+@media only screen and (max-width: 480px) {
+    .formBorder {
+        width: 100%; /* Ajustez la largeur du formulaire */
+    }
+}

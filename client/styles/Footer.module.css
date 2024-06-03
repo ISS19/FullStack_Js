@@ -1,0 +1,12 @@
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 97.3%;
+    background-color: #7E7B20;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.listunstyled li{
+    list-style: none;
+}

@@ -1,0 +1,96 @@
+@keyframes animationTextBlack {
+    0% {
+        color: #4F5726;
+    }
+
+    50% {
+        color: #7E7B20;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+.apropos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+}
+
+.contentApropos {
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px 0;
+}
+
+.contentApropos .card {
+    position: relative;
+    height: 250px;
+    background: #4F5726;
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px #4c4d4b;
+}
+
+.contentApropos .card .imgBox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px #4F5726;
+    transition: 0.5s ease-in-out;
+}
+
+.contentApropos .card:hover .imgBox {
+    height: 150px;
+    width: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+}
+
+.contentApropos .card .imgBox img {
+    max-width: 100px;
+    filter: invert(1);
+    transition: 0.5s ease-in-out;
+}
+
+.contentApropos .card:hover .imgBox img {
+    max-width: 75px;
+}
+
+.contentApropos .card .content {
+    position: absolute;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    float: right;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.textApropos {
+    animation-name: animationTextBlack;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
